@@ -1,5 +1,5 @@
-import { Image, Text, Box,  } from "@chakra-ui/react";
-import PropTypes from 'prop-types';
+import { Image, Text, Box } from "@chakra-ui/react";
+import PropTypes from "prop-types";
 
 const ServicesCard = ({ image, title, subtitle, description }) => {
   return (
@@ -19,7 +19,13 @@ const ServicesCard = ({ image, title, subtitle, description }) => {
           </Text>
         </Box>
 
-        <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight" isTruncated>
+        <Box
+          mt="1"
+          fontWeight="semibold"
+          as="h4"
+          lineHeight="tight"
+          isTruncated
+        >
           {title}
         </Box>
 
@@ -31,7 +37,7 @@ const ServicesCard = ({ image, title, subtitle, description }) => {
       </Box>
     </Box>
   );
-}
+};
 
 ServicesCard.propTypes = {
   image: PropTypes.string.isRequired,
@@ -41,4 +47,3 @@ ServicesCard.propTypes = {
 };
 
 export default ServicesCard;
-

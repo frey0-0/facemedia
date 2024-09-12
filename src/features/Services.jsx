@@ -34,13 +34,13 @@ const Services = () => {
         justifyItems="center"
       >
         {services.map((service, index) => (
-          <Box key={index} w="100%" maxW={{ base: '100%', md: '45%' }}>
+          <Box key={index} w="100%" maxW={{ base: "100%", md: "45%" }}>
             <ServicesCard {...service} />
           </Box>
         ))}
       </SimpleGrid>
     </Element>
   );
-}
+};
 
 export default Services;

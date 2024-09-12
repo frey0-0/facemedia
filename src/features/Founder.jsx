@@ -80,10 +80,10 @@ const Founder = () => {
           <Image
             src={image}
             alt="FounderImage"
-            height="90%"
-            width="30%"
+            height="25rem"
+            width="20rem"
             borderRadius={15}
-          ></Image>
+            />
         </HStack>
       )}
     </VStack>

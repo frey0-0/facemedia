@@ -1,9 +1,9 @@
-import React from 'react';
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex } from "@chakra-ui/react";
 
 const MovingText = () => {
-  const text = " We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you";
-  
+  const text =
+    " We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you, We Talk On Camera So You Don't Have To!, Let us handle the spotlight for you";
+
   return (
     <Box
       width="100%"
