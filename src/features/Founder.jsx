@@ -6,8 +6,8 @@ const Founder = () => {
   const { isMobile } = useMediaQueries();
 
   return (
-    <VStack backgroundColor="#F1EDE6" w="100%">
-      <Text fontSize="3xl" textAlign="center" mt="2rem" fontWeight="700">
+    <VStack backgroundColor="#F1EDE6" w="100%" h="auto">
+      <Text fontSize="3rem" textAlign="center" mt="2rem" fontWeight="700">
         Meet The Founder
       </Text>
       {isMobile ? (
@@ -36,14 +36,16 @@ const Founder = () => {
         </VStack>
       ) : (
         <HStack
-          px="4rem"
+          px="2.5rem"
           spacing="4rem"
-          alignItems="stretch"
+          justifyContent="space-between"
           height="24rem"
+          w="100%"
           mt="1rem"
           mb="2rem"
+          h="auto"
         >
-          <VStack spacing="1rem" height="full" w="70%">
+          <VStack spacing="1rem" height="full" pl="1rem"> 
             <Text fontSize="xl" color="#2D2D2D" textAlign="justify">
               I&lsquo;m Aryan Bhalla, and I&lsquo;ve been creating and editing
               YouTube videos since 2017. It&lsquo;s something I love, and
@@ -58,18 +60,16 @@ const Founder = () => {
               brands create great content, so they don&apos;t have to worry
               about being on camera themselves
             </Text>
-            <VStack align="end" spacing="0.5rem" width="56rem" mt="4rem">
+            <VStack alignItems="flex-end" spacing="0.5rem" mt="4rem" width="100%">
               <Text
-                fontSize="3xl"
+                fontSize="3rem"
                 fontWeight="700"
-                textAlign="right"
                 color="#FE5708"
               >
                 Aryan Bhalla
               </Text>
               <Text
-                fontSize="xs"
-                textAlign="right"
+                fontSize="1rem"
                 color="#2D2D2D"
                 mt="-0.75rem"
               >
@@ -80,10 +80,13 @@ const Founder = () => {
           <Image
             src={image}
             alt="FounderImage"
-            height="25rem"
-            width="20rem"
+            height="auto"
+            maxH="25rem"
+            width="40%"
+            maxW="20rem"
+            alignSelf="flex-start"
             borderRadius={15}
-            />
+          />
         </HStack>
       )}
     </VStack>
