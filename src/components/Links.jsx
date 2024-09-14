@@ -1,10 +1,10 @@
 import { HStack, Text } from "@chakra-ui/react";
 import { Link } from "react-scroll";
-import useMediaQuery from "../hooks/useMediaQuery";
+import useMediaQueries from "../hooks/useMediaQuery";
 import PropTypes from "prop-types";
 
 const Links = ({ isAtTop }) => {
-  const { isMobile } = useMediaQuery();
+  const { isMobile } = useMediaQueries();
 
   return (
     <HStack
