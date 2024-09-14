@@ -1,5 +1,5 @@
-import { Text, VStack } from '@chakra-ui/react';
-import Question from '../components/Question'
+import { Text, VStack } from "@chakra-ui/react";
+import Question from "../components/Question";
 
 const Questions = () => {
   const questions = [
@@ -27,9 +27,9 @@ const Questions = () => {
 
   return (
     <VStack spacing={4} p={4} w="full">
-    <Text fontSize="3rem" textAlign="center" mt="2rem" fontWeight="700">
-    Have Questions?
-    </Text>
+      <Text fontSize="3rem" textAlign="center" mt="2rem" fontWeight="700">
+        Have Questions?
+      </Text>
       {questions.map((q, index) => (
         <Question key={index} question={q.question} answer={q.answer} />
       ))}
