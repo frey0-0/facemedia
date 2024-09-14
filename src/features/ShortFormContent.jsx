@@ -1,30 +1,34 @@
-import { Grid, Text, VStack } from "@chakra-ui/react";
+import { Grid, Text, VStack, Box } from "@chakra-ui/react";
+import ShortVideo from "../components/ShortVideo";
 
 const ShortFormContent = () => {
-  const shortUrls = [
-    "basic.mp4",
-    "basic.mp4",
-    "basic.mp4",
-    "basic.mp4",
-  ];
+  const fileNames = ["basic.mp4", "basic.mp4", "basic.mp4", "basic.mp4"];
 
   return (
-    <VStack backgroundColor="white" w="100%" h="auto">
-      <Text fontSize="3rem" textAlign="center" mt="3rem" fontWeight="700">
+    <VStack backgroundColor="white" w="100%" h="auto" spacing={4} py="3rem">
+      <Text fontSize="3rem" textAlign="center" fontWeight="700">
         Short Form Content
       </Text>
-      <Grid
-        templateColumns={{ base: "1fr", sm: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
-        gap={10}
-        w="100%"
-        p={4}
-      >
-        {shortUrls.map((url, index) => (
-          <ShortFormContent key={index} fileName={url} />
-        ))}
-      </Grid>
+      <Box>
+        <Grid
+          templateColumns={{
+            base: "1fr",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(4, 1fr)",
+          }}
+          gap={2}
+          w="100%"
+          height="auto"
+          justifyContent="space-between"
+          alignItems="center"
+        >
+          {fileNames.map((file, index) => (
+            <ShortVideo key={index} fileName={file} />
+          ))}
+        </Grid>
+      </Box>
     </VStack>
-  )
-}
+  );
+};
 
 export default ShortFormContent;

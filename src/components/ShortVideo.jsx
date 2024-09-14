@@ -1,12 +1,10 @@
-import useMediaQueries from "../hooks/useMediaQuery";
+import { Box, AspectRatio } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { Box } from "@chakra-ui/react";
+import useMediaQueries from "../hooks/useMediaQuery";
 
 const ShortVideo = ({ fileName }) => {
   const { isTablet, isMobile } = useMediaQueries();
-  console.log("isTablet", isTablet);
-  console.log("isMobile", isMobile);
   const [videoUrl, setVideoUrl] = useState("");
 
   useEffect(() => {
@@ -21,16 +19,18 @@ const ShortVideo = ({ fileName }) => {
   }, [fileName]);
 
   return (
-    <Box w="100%" h="auto">
+    <Box w={isMobile ? "80vw" : isTablet ? "40vw" : "20vw"} h="auto">
       {videoUrl && (
-        <video
-          src={videoUrl}
-          autoPlay
-          muted
-          loop
-          controls
-          style={{ width: "100%", height: "auto" }}
-        />
+        <AspectRatio ratio={9 / 16}>
+          <video
+            src={videoUrl}
+            autoPlay
+            muted
+            loop
+            controls
+            style={{ width: "100%", height: "100%", borderRadius: "1.25rem" }}
+          />
+        </AspectRatio>
       )}
     </Box>
   );
