@@ -4,7 +4,6 @@ import useMediaQueries from "../hooks/useMediaQuery";
 import Links from "../components/Links";
 import LandingCTA from "../components/LandingCTA";
 import image from "../assets/center_graphic.png";
-import MovingText from "../components/MovingText";
 import { useEffect, useState } from "react";
 
 const Landing = () => {

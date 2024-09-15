@@ -1,12 +1,11 @@
-
-import Landing from "./features/Landing"
-import Services from "./features/Services"
-import Founder from "./features/Founder"
-import ShortFormContent from "./features/ShortFormContent"
-import Work from "./features/Work"
-import Questions from "./features/Questions"
-import Footer from "./features/Footer"
-import "./global.css"
+import Landing from "./features/Landing";
+import Services from "./features/Services";
+import Founder from "./features/Founder";
+import ShortFormContent from "./features/ShortFormContent";
+import Work from "./features/Work";
+import Questions from "./features/Questions";
+import Footer from "./features/Footer";
+import "./global.css";
 
 const App = () => {
   return (
@@ -16,9 +15,9 @@ const App = () => {
       <Work />
       <ShortFormContent />
       <Founder />
-      <Questions/>
+      <Questions />
       <Footer />
     </>
-  )
-}
-export default App
+  );
+};
+export default App;
