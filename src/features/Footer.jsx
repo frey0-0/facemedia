@@ -12,7 +12,7 @@ const Footer = () => {
            Your Story, Our Voice
            </Text>
            <Text fontSize="3rem" textAlign="center" mt="-2rem" fontWeight="700">
-           Let's Create Something Amazing Together
+           Let  &apos;s Create Something Amazing Together
            </Text> 
            <Button
             color="white"
@@ -32,24 +32,28 @@ const Footer = () => {
             >
             Book Now
             </Button>
-            <HStack w="14rem" mt={12} justifyContent="space-between">
+            <HStack mt={12} justifyContent="space-between" spacing={4} alignItems="center">
                 <IconButton
                     aria-label="X"
+                    boxSize="50px"
                     icon={<img src={X} alt="X" />}
                     onClick={() => window.location.href = ""}
                 />
                 <IconButton
                     aria-label="Instagram"
+                    boxSize="50px"
                     icon={<img src={Instagram} alt="Instagram" />}
                     onClick={() => window.location.href = ""}
                 />
                 <IconButton
                     aria-label="YouTube"
+                    boxSize="50px"
                     icon={<img src={YouTube} alt="YouTube" />}
                     onClick={() => window.location.href = ""}
                 />
                 <IconButton
                     aria-label="LinkedIn"
+                    boxSize="50px"
                     icon={<img src={LinkedIn} alt="LinkedIn" />}
                     onClick={() => window.location.href = ""}
                 />
