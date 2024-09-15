@@ -5,6 +5,7 @@ import Founder from "./features/Founder"
 import ShortFormContent from "./features/ShortFormContent"
 import Work from "./features/Work"
 import Questions from "./features/Questions"
+import Footer from "./features/Footer"
 import "./global.css"
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <ShortFormContent />
       <Founder />
       <Questions/>
+      <Footer />
     </>
   )
 }
