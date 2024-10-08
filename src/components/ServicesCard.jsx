@@ -3,34 +3,40 @@ import PropTypes from "prop-types";
 
 const ServicesCard = ({ image, title, subtitle, description }) => {
   return (
-    <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
-      <Image src={image} alt={title} />
-
+    <Box 
+      backgroundColor={"#F1EDE6"} 
+      borderWidth="1px" 
+      borderRadius="lg" 
+      overflow="hidden"
+      width="24rem" 
+      height="20rem" >
+      <Image 
+        src={image} 
+        alt={title}/>
       <Box p="6">
         <Box d="flex" alignItems="baseline">
           <Text
-            color="gray.500"
+            color="#FE5708"
             fontWeight="semibold"
             letterSpacing="wide"
-            fontSize="xs"
-            textTransform="uppercase"
+            fontSize="sm"
           >
             {subtitle}
           </Text>
         </Box>
-
         <Box
           mt="1"
+          mb="3"
           fontWeight="semibold"
           as="h4"
           lineHeight="tight"
-          isTruncated
-        >
-          {title}
+          isTruncated>
+          <Text color="#2D2D2D" fontSize="md">
+            {title}
+          </Text>
         </Box>
-
         <Box>
-          <Text color="gray.500" fontSize="sm">
+          <Text color="#2D2D2D" fontSize="xs" textAlign="justify">
             {description}
           </Text>
         </Box>
