@@ -4,12 +4,12 @@ import PropTypes from "prop-types";
 const ServicesCard = ({ image, title, subtitle, description }) => {
   return (
     <Box 
-      backgroundColor={"#F1EDE6"} 
+      bgGradient="linear(to-b, #FFFFFF, #F1EDE6)" 
       borderWidth="1px" 
       borderRadius="lg" 
       overflow="hidden"
-      width="24rem" 
-      height="20rem" >
+      width="16rem" 
+      height="14rem" >
       <Image 
         src={image} 
         alt={title}/>
@@ -19,7 +19,7 @@ const ServicesCard = ({ image, title, subtitle, description }) => {
             color="#FE5708"
             fontWeight="semibold"
             letterSpacing="wide"
-            fontSize="sm"
+            fontSize="l"
           >
             {subtitle}
           </Text>
@@ -31,12 +31,12 @@ const ServicesCard = ({ image, title, subtitle, description }) => {
           as="h4"
           lineHeight="tight"
           isTruncated>
-          <Text color="#2D2D2D" fontSize="md">
+          <Text color="#2D2D2D" fontSize="xl">
             {title}
           </Text>
         </Box>
         <Box>
-          <Text color="#2D2D2D" fontSize="xs" textAlign="justify">
+          <Text color="#2D2D2D" fontSize="md" textAlign="justify">
             {description}
           </Text>
         </Box>

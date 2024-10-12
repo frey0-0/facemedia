@@ -4,37 +4,49 @@ import PropTypes from "prop-types";
 
 const WorkCard = ({ link, title, subtitle, description }) => {
   return (
-    <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
-      <Image src={link} alt={title} />
-
-      <Box p="6">
-        <Box d="flex" alignItems="baseline">
-          <Text
-            color="gray.500"
-            fontWeight="semibold"
-            letterSpacing="wide"
-            fontSize="xs"
-            textTransform="uppercase"
-          >
-            {subtitle}
-          </Text>
-        </Box>
-
-        <Box
-          mt="1"
-          fontWeight="semibold"
-          as="h4"
-          lineHeight="tight"
-          isTruncated
+    <Box 
+    bgGradient="linear(to-b, #F1EDE6, #FFFFFF)" 
+    borderWidth="1px" 
+    borderRadius="1rem" 
+    boxShadow="sm"
+    overflow="hidden"
+    width={{ base: "16rem", sm: "22rem", md: "24rem", lg: "26rem" }}
+    height={{ base: "14rem", sm: "18rem", md: "20rem", lg: "22rem" }}
+    >
+      <Box 
+        px="6"
+        pt="6"
+        width="100%"
+        height="62%"
+      >
+        <iframe
+          width="100%"
+          height="100%"
+          src={`https://www.youtube.com/embed/${link}`}
+          style={{ borderRadius: '0.75rem' }}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </Box>
+      <Box p="6" d="flex" alignItems="baseline">
+        <Text
+          color="#FE5708"
+          letterSpacing="wide"
+          fontSize="md"
+          textTransform="uppercase"
         >
-          {title}
-        </Box>
-
-        <Box>
-          <Text color="gray.500" fontSize="sm">
-            {description}
-          </Text>
-        </Box>
+          {subtitle}
+        </Text>
+        <Text
+        color="#2D2D2D"
+        fontWeight="semibold"
+        fontSize="xl"
+        >
+        {title}
+        </Text>
+        <Text color="#2D2D2D" fontSize="sm" fontWeight="hairline" mt="3">
+          {description}
+        </Text>
       </Box>
     </Box>
   );
