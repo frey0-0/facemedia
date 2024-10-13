@@ -1,7 +1,10 @@
 import { Text, VStack } from "@chakra-ui/react";
 import Question from "../components/Question";
+import useMediaQueries from "../hooks/useMediaQuery";
 
 const Questions = () => {
+  const { isMobile } = useMediaQueries();
+  
   const questions = [
     {
       question: "Who is the target audience for FaceMedia?",
@@ -27,7 +30,7 @@ const Questions = () => {
 
   return (
     <VStack spacing={4} p={4} w="full">
-      <Text fontSize="3rem" textAlign="center" mt="2rem" fontWeight="700">
+      <Text fontSize={!isMobile ? "3rem" : "2rem"} textAlign="center" mt="2rem" fontWeight="700">
         Have Questions?
       </Text>
       {questions.map((q, index) => (

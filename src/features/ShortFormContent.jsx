@@ -1,12 +1,14 @@
 import { Grid, Text, VStack, Box } from "@chakra-ui/react";
 import ShortVideo from "../components/ShortVideo";
+import useMediaQueries from "../hooks/useMediaQuery";
 
 const ShortFormContent = () => {
+  const { isMobile } = useMediaQueries();
   const fileNames = ["basic.mp4", "basic.mp4", "basic.mp4", "basic.mp4"];
 
   return (
     <VStack backgroundColor="white" w="100%" h="auto" spacing={4} py="3rem">
-      <Text fontSize="3rem" textAlign="center" fontWeight="700">
+      <Text fontSize={!isMobile ? "3rem" : "2rem"} textAlign="center" fontWeight="700">
         Short Form Content
       </Text>
       <Box>
@@ -20,6 +22,7 @@ const ShortFormContent = () => {
           gap={2}
           w="100%"
           height="auto"
+          p="2rem"
           justifyContent="space-between"
           alignItems="center"
         >

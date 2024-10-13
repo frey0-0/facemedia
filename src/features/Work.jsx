@@ -1,8 +1,11 @@
 import { Element } from "react-scroll";
 import { Box, Text, SimpleGrid } from "@chakra-ui/react";
 import WorkCard from "../components/WorkCard";
+import useMediaQueries from "../hooks/useMediaQuery";
 
 const Work = () => {
+  const { isMobile } = useMediaQueries();
+  
   const videos = [
     {
       link: "zQjGN8Dkgd0",
@@ -50,7 +53,7 @@ const Work = () => {
       backgroundColor={"#F1EDE6"} 
       pt="2.5rem"
       >
-        <Text fontSize="3rem" textAlign="center" fontWeight="700">
+        <Text fontSize={!isMobile ? "3rem" : "2rem"} textAlign="center" fontWeight="700">
           Our Work
         </Text>
         <SimpleGrid

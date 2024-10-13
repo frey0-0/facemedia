@@ -17,19 +17,19 @@ const Footer = () => {
   
   return (
     <VStack backgroundColor="#F1EDE6" w="100%" h="auto" spacing={8}>
-      <Text fontSize="3rem" textAlign="center" mt="2rem" fontWeight="700">
+      <Text fontSize={!isMobile ? "3rem" : "2rem"} textAlign="center" mt="2rem" fontWeight="700">
         Your Story, Our Voice
       </Text>
-      <Text fontSize="3rem" textAlign="center" mt="-2rem" fontWeight="700">
-        Let &apos;s Create Something Amazing Together
+      <Text fontSize={!isMobile ? "3rem" : "2rem"} textAlign="center" mt="-2rem" fontWeight="700">
+        Let&apos;s Create Something Amazing Together
       </Text>
       <Button
         color="white"
         bg="#FE5708"
-        fontSize="2.25rem"
+        fontSize={!isMobile ? "2.25rem" : "1.5rem"}
         borderRadius="0.25rem"
-        w="16rem"
-        h="4rem"
+        w={!isMobile ? "16rem" : "12rem"}
+        h={!isMobile ? "4rem" : "3rem"}
         onClick={() => {
           window.location.href = "";
         }}

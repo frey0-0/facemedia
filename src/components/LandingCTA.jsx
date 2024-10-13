@@ -16,7 +16,7 @@ const LandingCTA = () => {
         </Text>
         <Text
           fontSize={!isMobile ? "4rem" : "2rem"}
-          fontWeight="700"
+          fontWeight="900"
           color="#FE5708"
           mt="-1rem"
           textAlign="left"
@@ -33,10 +33,10 @@ const LandingCTA = () => {
         <Button
           mt={isMobile ? "0.75rem" : "1.5rem"}
           backgroundColor={"#FE5708"}
-          width={!isMobile ? "10rem" : "6rem"}
-          height={!isMobile ? "3rem" : "2rem"}
+          width={!isMobile ? "12rem" : "7rem"}
+          height={!isMobile ? "4rem" : "2.5rem"}
           color="white"
-          fontSize={!isMobile ? "1rem" : "1rem"}
+          fontSize={!isMobile ? "1.75rem" : "1.15rem"}
         >
           Book Now
         </Button>
