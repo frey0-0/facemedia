@@ -7,7 +7,7 @@ const Founder = () => {
 
   return (
     <VStack backgroundColor="#F1EDE6" w="100%" h="auto">
-      <Text fontSize="3rem" textAlign="center" mt="2rem" fontWeight="700">
+      <Text fontSize={!isMobile ? "3rem" : "2rem"} textAlign="center" mt="2rem" fontWeight="700">
         Meet The Founder
       </Text>
       {isMobile ? (
@@ -30,7 +30,7 @@ const Founder = () => {
           <Text fontSize="2xl" fontWeight="700" color="#FE5708">
             Aryan Bhalla
           </Text>
-          <Text fontSize="2xs" color="#2D2D2D" mt="-1.25rem">
+          <Text fontSize="xs" color="#2D2D2D" mt="-1.25rem">
             Founder & CEO , FaceMedia
           </Text>
         </VStack>
