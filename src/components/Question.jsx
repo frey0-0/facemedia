@@ -11,12 +11,12 @@ const Question = ({ question, answer }) => {
     <VStack
       alignItems="flex-start"
       w="90%"
-      maxWidth="1000px"
+      maxWidth="1500px"
       borderBottom="0.5px solid #CFCFCF"
       pb={4}
     >
       <Button
-        fontSize={isMobile ? "sm" : "xl"}
+        fontSize={isMobile ? "sm" : "2xl"}
         fontWeight="700"
         onClick={() => setIsOpen(!isOpen)}
         textAlign="left"
@@ -37,7 +37,7 @@ const Question = ({ question, answer }) => {
         <Box w="100%">
           <Text
             color="black"
-            fontSize={isMobile ? "sm" : "1xl"}
+            fontSize={isMobile ? "sm" : "2xl"}
             overflowWrap="break-word"
             wordBreak="break-word"
           >
