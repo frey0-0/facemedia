@@ -4,11 +4,11 @@ import useMediaQueries from "../hooks/useMediaQuery";
 import PropTypes from "prop-types";
 
 const Links = ({ isAtTop }) => {
-  const { isMobile } = useMediaQueries();
+  const { isMobile, isTablet } = useMediaQueries();
 
   return (
     <HStack
-      spacing={isMobile ? "" : "3rem"}
+      spacing={isMobile ? "" : isTablet ? "2rem" : "3rem"}
       fontSize="1rem"
       alignItems="center"
       justifyContent={isMobile ? "space-between" : ""}

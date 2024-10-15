@@ -4,7 +4,7 @@ import useMediaQueries from "../hooks/useMediaQuery";
 import image from "../assets/founder.png";
 
 const Founder = () => {
-  const { isMobile } = useMediaQueries();
+  const { isMobile, isTablet } = useMediaQueries();
 
   return (
     <Element name="about">
@@ -12,7 +12,7 @@ const Founder = () => {
         <Text fontSize={!isMobile ? "3rem" : "2rem"} textAlign="center" mt="2rem" fontWeight="700" >
           Meet The Founder
         </Text>
-        {isMobile ? (
+        {isMobile || isTablet ? (
           <VStack p="1rem" spacing={4}>
             <Text fontSize="sm" color="#2D2D2D" textAlign="justify">
               I&lsquo;m Aryan Bhalla, and I&lsquo;ve been creating and editing

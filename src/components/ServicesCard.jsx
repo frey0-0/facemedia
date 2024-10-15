@@ -10,15 +10,15 @@ const ServicesCard = ({ image, title, subtitle, description }) => {
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
-      width={{ base: "16rem", sm: "22rem", md: "24rem", lg: "36rem" }}
-      height={{ base: "24rem", sm: "18rem", md: "20rem", lg: "32rem" }}
+      width="100%"
+      height="auto"
     >
       <Box
         px="4"
         pt="4"
         borderRadius="0.25rem"
         width="100%"
-        height={!isMobile ? "50%" : "45%"}
+        height={!isMobile ? "50%" : "50%%"}
       >
         <Image
           width="100%"
@@ -36,6 +36,7 @@ const ServicesCard = ({ image, title, subtitle, description }) => {
             color="#FE5708"
             fontWeight="semibold"
             letterSpacing="wide"
+            wordBreak="break-all"
             fontSize={!isMobile ? "xl" : "sm"}
           >
             {subtitle}
@@ -49,7 +50,11 @@ const ServicesCard = ({ image, title, subtitle, description }) => {
           lineHeight="tight"
           isTruncated
         >
-          <Text color="#2D2D2D" fontSize={!isMobile ? "3xl" : "md"}>
+          <Text
+            color="#2D2D2D"
+            fontSize={!isMobile ? "3xl" : "md"}
+            wordBreak="break-all"
+          >
             {title}
           </Text>
         </Box>

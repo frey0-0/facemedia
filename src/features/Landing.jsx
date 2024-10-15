@@ -9,7 +9,7 @@ import image from "../assets/center_graphic.png";
 import { useEffect, useState } from "react";
 
 const Landing = () => {
-  const { isMobile } = useMediaQueries();
+  const { isMobile, isTablet } = useMediaQueries();
   const [isAtTop, setIsAtTop] = useState(true);
 
   useEffect(() => {
@@ -47,7 +47,12 @@ const Landing = () => {
             <Links isAtTop={isAtTop} />
           </VStack>
         ) : (
-          <HStack justifyContent="space-between" w="100%" pl="6rem" pr="9rem">
+          <HStack
+            justifyContent="space-between"
+            w="100%"
+            pl={isTablet ? "1rem" : "6rem"}
+            pr={isTablet ? "" : "9rem"}
+          >
             <Image src={logo} alt="logo" width="10rem" height="5rem" />
             <Links isAtTop={isAtTop} />
           </HStack>

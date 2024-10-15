@@ -4,8 +4,9 @@ import WorkCard from "../components/WorkCard";
 import useMediaQueries from "../hooks/useMediaQuery";
 
 const Work = () => {
-  const { isMobile } = useMediaQueries();
-  
+  const { isMobile, isTablet } = useMediaQueries();
+  console.log(isMobile, isTablet);
+
   const videos = [
     {
       link: "zQjGN8Dkgd0",
@@ -47,25 +48,28 @@ const Work = () => {
 
   return (
     <Element name="work">
-      <Box 
-      h="auto" 
-      w="auto" 
-      backgroundColor={"#F1EDE6"} 
-      pt="2.5rem"
-      >
-        <Text fontSize={!isMobile ? "3rem" : "2rem"} textAlign="center" fontWeight="700">
+      <Box h="auto" w="auto" backgroundColor={"#F1EDE6"} pt="2.5rem">
+        <Text
+          fontSize={!isMobile ? "3rem" : "2rem"}
+          textAlign="center"
+          fontWeight="700"
+        >
           Our Work
         </Text>
         <SimpleGrid
-          width="80%"
+          width="100%"
           columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
-          mx="auto"
+          mx="auto" 
           spacing="2rem"
           justifyItems="center"
           p={5}
         >
           {videos.map((video, index) => (
-            <Box key={index} w="100%" maxW={{ base: "100%", md: "45%" }}>
+            <Box
+              key={index}
+              w="100%"
+              maxW={isMobile ? "90vw" : isTablet ? "44vw" : "25vw"}
+            >
               <WorkCard {...video} />
             </Box>
           ))}
