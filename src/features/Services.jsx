@@ -43,8 +43,9 @@ const Services = () => {
         columns={{ base: 1, md: 2 }}
         spacing="2rem" 
         p="2rem"
-        maxW="72rem"
-        mx="auto"
+        // maxW="72rem"
+        // mx="auto"
+        w="100%"
         justifyItems="center"
       >
         {services.map((service, index) => (

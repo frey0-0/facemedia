@@ -63,13 +63,24 @@ const Landing = () => {
             <Image src={image} alt="center graphic" w="30%" h="auto" />
           )}
         </HStack>
-        <Marquee 
-        speed={!isMobile ? "100" : "60"}
-        style={{ color: "#2c2c2c", fontSize: !isMobile ? "1.5rem" : "1rem" , margin: "1rem"}}
-        pauseOnHover={true}
-        m="1rem">
-        We Talk On Camera So You Don't Have To! Let us handle the spotlight for you. We Talk On Camera So You Don't Have To! Let us handle the spotlight for you. We Talk On Camera So You Don't Have To! Let us handle the spotlight for you.
-      </Marquee>
+        <Marquee
+          speed={isMobile ? "30" : "50"}
+          gradientWidth={isMobile ? "100px" : "400px"}
+          gradientColor="#F1EDE6"
+          gradient={true}
+          style={{
+            color: "#2c2c2c",
+            fontSize: !isMobile ? "1.5rem" : "1rem",
+            marginTop: "1rem",
+            marginBottom: "1rem",
+          }}
+          pauseOnHover={true}
+        >
+          We Talk On Camera So You Don&rsquo;t Have To! Let us handle the
+          spotlight for you. We Talk On Camera So You Don&rsquo;t Have To! Let
+          us handle the spotlight for you. We Talk On Camera So You Don&rsquo;t
+          Have To! Let us handle the spotlight for you.
+        </Marquee>
       </VStack>
     </Element>
   );

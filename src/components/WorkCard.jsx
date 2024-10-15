@@ -1,4 +1,4 @@
-import { Image, Text, Box } from "@chakra-ui/react";
+import { Text, Box } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 import useMediaQueries from "../hooks/useMediaQuery";
 
