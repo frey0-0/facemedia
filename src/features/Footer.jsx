@@ -15,14 +15,30 @@ import LinkedIn from "../assets/icons/LinkedIn.png";
 
 const Footer = () => {
   const { isMobile } = useMediaQueries();
-  
+
   return (
     <Element name="contact">
-      <VStack p="0.25rem" backgroundColor="#F1EDE6" w="100%" h="auto" spacing={8}>
-        <Text fontSize={!isMobile ? "3rem" : "2rem"} textAlign="center" mt="2rem" fontWeight="700">
+      <VStack
+        p="0.25rem"
+        backgroundColor="#F1EDE6"
+        w="100%"
+        h="auto"
+        spacing={8}
+      >
+        <Text
+          fontSize={!isMobile ? "3rem" : "2rem"}
+          textAlign="center"
+          mt="2rem"
+          fontWeight="700"
+        >
           Your Story, Our Voice
         </Text>
-        <Text fontSize={!isMobile ? "3rem" : "2rem"} textAlign="center" mt="-2rem" fontWeight="700">
+        <Text
+          fontSize={!isMobile ? "3rem" : "2rem"}
+          textAlign="center"
+          mt="-2rem"
+          fontWeight="700"
+        >
           Let&apos;s Create Something Amazing Together
         </Text>
         <Button

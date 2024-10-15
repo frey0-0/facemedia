@@ -14,12 +14,15 @@ const WorkCard = ({ link, title, subtitle, description }) => {
       w="100%"
       height="auto"
     >
-      <Box px="4" pt="4" w="100%" height={!isMobile ? "62%" : "45%"}>
+      <Box px="2" pt="4" w="100%">
         <iframe
           width="100%"
-          height="100%"
           src={`https://www.youtube.com/embed/${link}`}
-          style={{ borderRadius: "0.75rem" }}
+          style={{
+            aspectRatio: "16/9",
+            borderRadius: "0.75rem",
+            width: "100%",
+          }}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />

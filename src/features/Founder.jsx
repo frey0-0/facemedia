@@ -9,7 +9,12 @@ const Founder = () => {
   return (
     <Element name="about">
       <VStack backgroundColor="#F1EDE6" w="100%" h="auto">
-        <Text fontSize={!isMobile ? "3rem" : "2rem"} textAlign="center" mt="2rem" fontWeight="700" >
+        <Text
+          fontSize={!isMobile ? "3rem" : "2rem"}
+          textAlign="center"
+          mt="2rem"
+          fontWeight="700"
+        >
           Meet The Founder
         </Text>
         {isMobile || isTablet ? (
@@ -21,12 +26,12 @@ const Founder = () => {
               telling stories through video.
             </Text>
             <Text fontSize="sm" color="#2D2D2D" textAlign="justify">
-              While studying Electrical Engineering at IIT Roorkee, I had an idea:
-              why not use my on-camera speaking skills to help brands? That&apos;s
-              how FaceMedia was born. With the experience and knowledge I&apos;ve
-              gained over the years, I&apos;m here to help brands create great
-              content, so they don&apos;t have to worry about being on camera
-              themselves.
+              While studying Electrical Engineering at IIT Roorkee, I had an
+              idea: why not use my on-camera speaking skills to help brands?
+              That&apos;s how FaceMedia was born. With the experience and
+              knowledge I&apos;ve gained over the years, I&apos;m here to help
+              brands create great content, so they don&apos;t have to worry
+              about being on camera themselves.
             </Text>
             <Image src={image} alt="FounderImage" borderRadius={15} />
             <Text fontSize="2xl" fontWeight="700" color="#FE5708">
@@ -47,7 +52,7 @@ const Founder = () => {
             mb="2rem"
             h="auto"
           >
-            <VStack spacing="1rem" height="full" pl="1rem"> 
+            <VStack spacing="1rem" height="full" pl="1rem">
               <Text fontSize="xl" color="#2D2D2D" textAlign="justify">
                 I&lsquo;m Aryan Bhalla, and I&lsquo;ve been creating and editing
                 YouTube videos since 2017. It&lsquo;s something I love, and
@@ -62,19 +67,16 @@ const Founder = () => {
                 brands create great content, so they don&apos;t have to worry
                 about being on camera themselves
               </Text>
-              <VStack alignItems="flex-end" spacing="0.5rem" mt="4rem" width="100%">
-                <Text
-                  fontSize="3rem"
-                  fontWeight="700"
-                  color="#FE5708"
-                >
+              <VStack
+                alignItems="flex-end"
+                spacing="0.5rem"
+                mt="4rem"
+                width="100%"
+              >
+                <Text fontSize="3rem" fontWeight="700" color="#FE5708">
                   Aryan Bhalla
                 </Text>
-                <Text
-                  fontSize="1rem"
-                  color="#2D2D2D"
-                  mt="-0.75rem"
-                >
+                <Text fontSize="1rem" color="#2D2D2D" mt="-0.75rem">
                   Founder & CEO , FaceMedia
                 </Text>
               </VStack>

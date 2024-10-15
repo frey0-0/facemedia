@@ -8,16 +8,20 @@ const ShortFormContent = () => {
 
   return (
     <VStack backgroundColor="white" w="100%" h="auto" spacing={4} py="3rem">
-      <Text fontSize={!isMobile ? "3rem" : "2rem"} textAlign="center" fontWeight="700">
+      <Text
+        fontSize={!isMobile ? "3rem" : "2rem"}
+        textAlign="center"
+        fontWeight="700"
+      >
         Short Form Content
       </Text>
       <Box>
         <Grid
           templateColumns={{
-            base: "1fr", 
+            base: "1fr",
             sm: "repeat(2, 1fr)",
-            md: "repeat(2, 1fr)", 
-            lg: "repeat(4, 1fr)", 
+            md: "repeat(2, 1fr)",
+            lg: "repeat(4, 1fr)",
           }}
           gap={2}
           w="100%"

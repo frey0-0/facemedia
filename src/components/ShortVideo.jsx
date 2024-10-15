@@ -28,7 +28,7 @@ const ShortVideo = ({ fileName }) => {
             muted
             loop
             controls
-            style={{ width: "100%", height: "100%", borderRadius: "1.25rem" }}
+            style={{ width: "100%", height: "100%", borderRadius: "0.6rem" }}
           />
         </AspectRatio>
       )}

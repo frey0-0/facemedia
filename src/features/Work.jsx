@@ -59,8 +59,8 @@ const Work = () => {
         <SimpleGrid
           width="100%"
           columns={{ base: 1, sm: 2, md: 3, lg: 3 }}
-          mx="auto" 
-          spacing="2rem"
+          mx="auto"
+          spacing="1rem"
           justifyItems="center"
           p={5}
         >
@@ -68,7 +68,6 @@ const Work = () => {
             <Box
               key={index}
               w="100%"
-              maxW={isMobile ? "90vw" : isTablet ? "44vw" : "25vw"}
             >
               <WorkCard {...video} />
             </Box>
