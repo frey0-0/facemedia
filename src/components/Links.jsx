@@ -15,7 +15,7 @@ const Links = ({ isAtTop }) => {
       w={isMobile ? "100%" : "auto"}
       position={!isAtTop && isMobile ? "fixed" : ""}
       top={0}
-      px={isMobile && !isAtTop ? "1rem" : ""}
+      px={(isMobile && !isAtTop) || isTablet ? "1rem" : ""}
       py={isMobile && !isAtTop ? "1rem" : ""}
       backgroundColor={"#F1EDE6"}
       zIndex={23}
