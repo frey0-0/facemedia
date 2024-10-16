@@ -57,14 +57,9 @@ const Landing = () => {
             <Links isAtTop={isAtTop} />
           </HStack>
         )}
-        <HStack
-          w="100%"
-          h="auto"
-          mt={!isMobile ? "8rem" : "4rem"}
-          justifyContent="space-around"
-        >
+        <HStack w="100%" h="auto" mt="4rem" justifyContent="space-around">
           <LandingCTA />
-          {!isMobile && (
+          {!(isMobile || isTablet) && (
             <Image src={image} alt="center graphic" w="30%" h="auto" />
           )}
         </HStack>
@@ -81,10 +76,9 @@ const Landing = () => {
           }}
           pauseOnHover={true}
         >
-          We Talk On Camera So You Don&rsquo;t Have To! Let us handle the
-          spotlight for you. We Talk On Camera So You Don&rsquo;t Have To! Let
-          us handle the spotlight for you. We Talk On Camera So You Don&rsquo;t
-          Have To! Let us handle the spotlight for you.
+          {" "}
+          2 Million+ views | 8.5k+ subscribers | 300+ videos created | 2
+          Million+ views | 8.5k+ subscribers | 300+ videos created |
         </Marquee>
       </VStack>
     </Element>

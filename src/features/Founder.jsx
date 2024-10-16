@@ -19,13 +19,21 @@ const Founder = () => {
         </Text>
         {isMobile || isTablet ? (
           <VStack p="1rem" spacing={4}>
-            <Text fontSize="sm" color="#2D2D2D" textAlign="justify">
+            <Text
+              fontSize={isTablet ? "xl" : "sm"}
+              color="#2D2D2D"
+              textAlign="justify"
+            >
               I&lsquo;m Aryan Bhalla, and I&lsquo;ve been creating and editing
               YouTube videos since 2017. It&lsquo;s something I love, and
               I&lsquo;ve worked hard to get better at filming, editing, and
               telling stories through video.
             </Text>
-            <Text fontSize="sm" color="#2D2D2D" textAlign="justify">
+            <Text
+              fontSize={isTablet ? "xl" : "sm"}
+              color="#2D2D2D"
+              textAlign="justify"
+            >
               While studying Electrical Engineering at IIT Roorkee, I had an
               idea: why not use my on-camera speaking skills to help brands?
               That&apos;s how FaceMedia was born. With the experience and
@@ -34,10 +42,18 @@ const Founder = () => {
               about being on camera themselves.
             </Text>
             <Image src={image} alt="FounderImage" borderRadius={15} />
-            <Text fontSize="2xl" fontWeight="700" color="#FE5708">
+            <Text
+              fontSize={isTablet ? "3xl" : "2xl"}
+              fontWeight="700"
+              color="#FE5708"
+            >
               Aryan Bhalla
             </Text>
-            <Text fontSize="xs" color="#2D2D2D" mt="-1.25rem">
+            <Text
+              fontSize={isTablet ? "lg" : "xs"}
+              color="#2D2D2D"
+              mt="-1.25rem"
+            >
               Founder & CEO , FaceMedia
             </Text>
           </VStack>

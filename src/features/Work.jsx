@@ -48,11 +48,12 @@ const Work = () => {
 
   return (
     <Element name="work">
-      <Box h="auto" w="auto" backgroundColor={"#F1EDE6"} pt="2.5rem">
+      <Box h="auto" w="auto" backgroundColor={"#F1EDE6"} mt="1.5rem">
         <Text
           fontSize={!isMobile ? "3rem" : "2rem"}
           textAlign="center"
           fontWeight="700"
+          pt="2rem"
         >
           Our Work
         </Text>
@@ -63,12 +64,10 @@ const Work = () => {
           spacing="1rem"
           justifyItems="center"
           p={5}
+          px={isMobile ? "1rem" : isTablet ? "2rem" : "6rem"}
         >
           {videos.map((video, index) => (
-            <Box
-              key={index}
-              w="100%"
-            >
+            <Box key={index} w="100%">
               <WorkCard {...video} />
             </Box>
           ))}

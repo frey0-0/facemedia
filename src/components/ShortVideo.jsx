@@ -19,7 +19,7 @@ const ShortVideo = ({ fileName }) => {
   }, [fileName]);
 
   return (
-    <Box w={isMobile ? "80vw" : isTablet ? "40vw" : "20vw"} h="auto">
+    <Box w={isMobile ? "70vw" : isTablet ? "40vw" : "20vw"} h="auto">
       {videoUrl && (
         <AspectRatio ratio={9 / 16}>
           <video

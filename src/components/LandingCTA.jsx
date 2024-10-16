@@ -2,12 +2,15 @@ import { Text, Button, Box, VStack } from "@chakra-ui/react";
 import useMediaQueries from "../hooks/useMediaQuery";
 
 const LandingCTA = () => {
-  const { isMobile } = useMediaQueries();
+  const { isMobile, isTablet } = useMediaQueries();
   return (
     <Box pl={isMobile ? "0.5rem" : ""}>
-      <VStack justifyContent="flex-start" alignItems="flex-start" w="auto">
+      <VStack
+        alignItems={isMobile || isTablet ? "center" : "flex-start"}
+        w="auto"
+      >
         <Text
-          fontSize={!isMobile ? "4rem" : "2rem"}
+          fontSize={isMobile ? "2rem" : isTablet ? "3rem" : "4rem"}
           color="black"
           fontWeight="100"
           textAlign="left"
@@ -15,7 +18,7 @@ const LandingCTA = () => {
           We Talk On Camera
         </Text>
         <Text
-          fontSize={!isMobile ? "4rem" : "2rem"}
+          fontSize={isMobile ? "2rem" : isTablet ? "3rem" : "4rem"}
           fontWeight="900"
           color="#FE5708"
           mt="-1rem"

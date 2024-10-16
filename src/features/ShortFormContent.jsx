@@ -23,7 +23,7 @@ const ShortFormContent = () => {
             md: "repeat(2, 1fr)",
             lg: "repeat(4, 1fr)",
           }}
-          gap={2}
+          gap={4}
           w="100%"
           height="auto"
           p="2rem"

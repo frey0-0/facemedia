@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import useMediaQueries from "../hooks/useMediaQuery";
 
 const ServicesCard = ({ image, title, subtitle, description }) => {
-  const { isMobile } = useMediaQueries();
+  const { isMobile, isTablet } = useMediaQueries();
   return (
     <Box
       bgGradient="linear(to-b, #FFFFFF, #F1EDE6)"
@@ -11,7 +11,6 @@ const ServicesCard = ({ image, title, subtitle, description }) => {
       borderRadius="lg"
       overflow="hidden"
       width="100%"
-      height="auto"
     >
       <Box
         px="4"
@@ -37,7 +36,7 @@ const ServicesCard = ({ image, title, subtitle, description }) => {
             fontWeight="semibold"
             letterSpacing="wide"
             wordBreak="break-all"
-            fontSize={!isMobile ? "xl" : "sm"}
+            fontSize={isMobile ? "sm" : isTablet ? "md" : "xl"}
           >
             {subtitle}
           </Text>
@@ -52,7 +51,7 @@ const ServicesCard = ({ image, title, subtitle, description }) => {
         >
           <Text
             color="#2D2D2D"
-            fontSize={!isMobile ? "3xl" : "md"}
+            fontSize={isMobile ? "md" : isTablet ? "2xl" : "3xl"}
             wordBreak="break-all"
           >
             {title}
