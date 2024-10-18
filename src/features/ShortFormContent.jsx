@@ -4,7 +4,7 @@ import useMediaQueries from "../hooks/useMediaQuery";
 
 const ShortFormContent = () => {
   const { isMobile } = useMediaQueries();
-  const fileNames = ["basic.mp4", "basic.mp4", "basic.mp4", "basic.mp4"];
+  const fileNames = ["1.mp4", "2.mp4", "3.mp4", "4.mp4"];
 
   return (
     <VStack backgroundColor="white" w="100%" h="auto" spacing={4} py="3rem">

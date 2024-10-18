@@ -1,7 +1,10 @@
 import ServicesCard from "../components/ServicesCard";
 import { SimpleGrid, Box, Text } from "@chakra-ui/react";
 import { Element } from "react-scroll";
-import stockimage from "../assets/service_stockphoto.png";
+import service1 from "../assets/service1.png";
+import service2 from "../assets/service2.png";
+import service3 from "../assets/service3.png";
+import service4 from "../assets/service4.png";
 import useMediaQueries from "../hooks/useMediaQuery";
 
 const Services = () => {
@@ -9,28 +12,28 @@ const Services = () => {
 
   const services = [
     {
-      image: stockimage,
+      image: service1,
       title: "On-Camera Content Creation",
       subtitle: "Instagram, LinkedIn and more",
       description:
-        "We create high-quality on-camera content, so you don't need to hire an in-house content creator. With over 300 videos recorded, our experienced team ensures your brand's message is clear, engaging, and creative, helping your brand stand out in the digital space.",
+        "We create high-quality on-camera content, so you don’t need to hire an in-house content creator. With over 300 videos recorded, our experienced team ensures your brand’s message is clear, engaging, and creative, helping your brand stand out in the digital space.",
     },
     {
-      image: stockimage,
+      image: service2,
       title: "Video Editing Services",
       subtitle: "Instagram, LinkedIn and more",
       description:
-        "In addition to recording, we provide professional video editing. Whether it's the videos we create or your existing footage, we'll deliver a polished product. With over 300 videos edited and lakhs of views, we know how to keep your audience engaged.",
+        "In addition to recording, we provide professional video editing. Whether it's the videos we create or your existing footage, we’ll deliver a polished product. With over 300 videos edited and lakhs of views, we know how to keep your audience engaged.",
     },
     {
-      image: stockimage,
+      image: service3,
       title: "Content Writing Services",
       subtitle: "Instagram, LinkedIn and more",
       description:
         "We offer content writing for social media, including video scripts that connect your brand with your audience. Let us handle your content while you focus on your business.",
     },
     {
-      image: stockimage,
+      image: service4,
       title: "Service Content Strategy",
       subtitle: "Instagram, LinkedIn and more",
       description:

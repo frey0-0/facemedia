@@ -22,7 +22,8 @@ const ServicesCard = ({ image, title, subtitle, description }) => {
         <Image
           width="100%"
           height="100%"
-          objectFit="cover"
+          objectFit="stretch"
+          maxH="20rem"
           overflow="hidden"
           src={image}
           alt={title}

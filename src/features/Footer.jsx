@@ -48,9 +48,12 @@ const Footer = () => {
           borderRadius="0.25rem"
           w={!isMobile ? "16rem" : "12rem"}
           h={!isMobile ? "4rem" : "3rem"}
-          onClick={() => {
-            window.location.href = "";
-          }}
+          onClick={() =>
+            window.open(
+              "https://calendly.com/aryanbhalla5735/discussion",
+              "_blank"
+            )
+          }
           _hover={{
             bg: "#FF7532",
             color: "white",
@@ -69,25 +72,25 @@ const Footer = () => {
             aria-label="X"
             boxSize="50px"
             icon={<img src={X} alt="X" />}
-            onClick={() => (window.location.href = "")}
+            onClick={() => (window.open("https://x.com/AryanBhalla57", "_blank"))}
           />
           <IconButton
             aria-label="Instagram"
             boxSize="50px"
             icon={<img src={Instagram} alt="Instagram" />}
-            onClick={() => (window.location.href = "")}
+            onClick={() => (window.open("https://www.instagram.com/aryan_bhalla57/", "_blank"))}
           />
           <IconButton
             aria-label="YouTube"
             boxSize="50px"
             icon={<img src={YouTube} alt="YouTube" />}
-            onClick={() => (window.location.href = "")}
+            onClick={() => (window.open("https://www.youtube.com/@AryanBhalla", "_blank"))}
           />
           <IconButton
             aria-label="LinkedIn"
             boxSize="50px"
             icon={<img src={LinkedIn} alt="LinkedIn" />}
-            onClick={() => (window.location.href = "")}
+            onClick={() => (window.open("https://www.linkedin.com/in/aryanbhalla/", "_blank"))}
           />
         </HStack>
         <Divider

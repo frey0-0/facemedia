@@ -40,6 +40,12 @@ const LandingCTA = () => {
           height={!isMobile ? "4rem" : "2.5rem"}
           color="white"
           fontSize={!isMobile ? "1.75rem" : "1.15rem"}
+          onClick={() =>
+            window.open(
+              "https://calendly.com/aryanbhalla5735/discussion",
+              "_blank"
+            )
+          }
         >
           Book Now
         </Button>

@@ -1,4 +1,4 @@
-import { VStack, HStack, Image } from "@chakra-ui/react";
+import { VStack, HStack, Image, Text } from "@chakra-ui/react";
 import { Element } from "react-scroll";
 import logo from "../assets/logo.png";
 import useMediaQueries from "../hooks/useMediaQuery";
@@ -76,9 +76,16 @@ const Landing = () => {
           }}
           pauseOnHover={true}
         >
-          {" "}
-          2 Million+ views | 8.5k+ subscribers | 300+ videos created | 2
-          Million+ views | 8.5k+ subscribers | 300+ videos created |
+          <Text>
+            2 Million+ views | 8.5k+ subscribers | 300+ videos created | 2
+            Million+ views | 8.5k+ subscribers | 300+ videos created | 2
+            Million+ views | 8.5k+ subscribers | 300+ videos created | 2
+            Million+ views | 8.5k+ subscribers | 300+ videos created | 2
+            Million+ views | 8.5k+ subscribers | 300+ videos created | 2
+            Million+ views | 8.5k+ subscribers | 300+ videos created | 2
+            Million+ views | 8.5k+ subscribers | 300+ videos created | 2
+            Million+ views | 8.5k+ subscribers | 300+ videos created |
+          </Text>
         </Marquee>
       </VStack>
     </Element>
