@@ -14,28 +14,28 @@ const Services = () => {
     {
       image: service1,
       title: "On-Camera Content Creation",
-      subtitle: "Instagram, LinkedIn and more",
+      subtitle: "Instagram, YouTube and more",
       description:
         "We create high-quality on-camera content, so you don’t need to hire an in-house content creator. With over 300 videos recorded, our experienced team ensures your brand’s message is clear, engaging, and creative, helping your brand stand out in the digital space.",
     },
     {
       image: service2,
       title: "Video Editing Services",
-      subtitle: "Instagram, LinkedIn and more",
+      subtitle: "Instagram, YouTube and more",
       description:
         "In addition to recording, we provide professional video editing. Whether it's the videos we create or your existing footage, we’ll deliver a polished product. With over 300 videos edited and lakhs of views, we know how to keep your audience engaged.",
     },
     {
       image: service3,
       title: "Content Writing Services",
-      subtitle: "Instagram, LinkedIn and more",
+      subtitle: "Instagram, YouTube and more",
       description:
         "We offer content writing for social media, including video scripts that connect your brand with your audience. Let us handle your content while you focus on your business.",
     },
     {
       image: service4,
       title: "Content Strategy",
-      subtitle: "Instagram, LinkedIn and more",
+      subtitle: "Instagram, YouTube and more",
       description:
         "We develop content strategies to improve your views and engagement. We'll work with you to understand your goals and create a plan to grow your audience.",
     },

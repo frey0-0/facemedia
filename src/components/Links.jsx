@@ -8,7 +8,7 @@ const Links = ({ isAtTop }) => {
 
   return (
     <HStack
-      spacing={isMobile ? "" : isTablet ? "2rem" : "2rem"}
+      spacing={isMobile ? "" : isTablet ? "2rem" : "4rem"}
       fontSize="1rem"
       alignItems="center"
       justifyContent={isMobile ? "space-between" : ""}
@@ -21,27 +21,27 @@ const Links = ({ isAtTop }) => {
       zIndex={23}
     >
       <Link to="home" smooth={true} duration={500} offset={-70}>
-        <Button backgroundColor="transparent" variant="plain">
+        <Button backgroundColor="transparent" variant="plain" width="20px">
           <Text fontWeight="400">Home</Text>
         </Button>
       </Link>
       <Link to="services" smooth={true} duration={500} offset={-70}>
-        <Button backgroundColor="transparent" variant="plain">
+        <Button backgroundColor="transparent" variant="plain" width="20px">
           <Text fontWeight="400">Services</Text>
         </Button>
       </Link>
       <Link to="work" smooth={true} duration={500} offset={-70}>
-        <Button backgroundColor="transparent" variant="plain">
+        <Button backgroundColor="transparent" variant="plain" width="20px">
           <Text fontWeight="400">Work</Text>
         </Button>
       </Link>
       <Link to="about" smooth={true} duration={500} offset={-70}>
-        <Button backgroundColor="transparent" variant="plain">
+        <Button backgroundColor="transparent" variant="plain" width="20px">
           <Text fontWeight="400">About</Text>
         </Button>
       </Link>
       <Link to="contact" smooth={true} duration={500} offset={-70}>
-        <Button backgroundColor="transparent" variant="plain">
+        <Button backgroundColor="transparent" variant="plain" width="20px">
           <Text fontWeight="400">Contact</Text>
         </Button>
       </Link>
