@@ -12,37 +12,31 @@ const Work = () => {
       link: "lYy12AD4Ebk",
       title: "Storytelling",
       subtitle: "On-Camera Content Creation",
-      description: "Description 1",
     },
     {
       link: "6Z93qZUDirY",
       title: "Vlog",
       subtitle: "On-Camera Content Creation",
-      description: "Description 1",
     },
     {
       link: "_4aYW5Vs6Jc",
       title: "Humour",
       subtitle: "Content Writing",
-      description: "Description 1",
     },
     {
       link: "Fx8GHONah8c",
       title: "Music Video",
       subtitle: "Video Editing",
-      description: "Description 1",
     },
     {
       link: "Ei0-ddksJyo",
       title: "Storytelling",
       subtitle: "Video Editing",
-      description: "Description 1",
     },
     {
       link: "loHjcyzc3ww",
       title: "Short Film",
       subtitle: "Video Editing",
-      description: "Description 1",
     },
   ];
 

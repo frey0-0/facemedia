@@ -2,7 +2,7 @@ import { Text, Box } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 import useMediaQueries from "../hooks/useMediaQuery";
 
-const WorkCard = ({ link, title, subtitle, description }) => {
+const WorkCard = ({ link, title, subtitle }) => {
   const { isMobile } = useMediaQueries();
   return (
     <Box
@@ -43,14 +43,6 @@ const WorkCard = ({ link, title, subtitle, description }) => {
         >
           {title}
         </Text>
-        <Text
-          color="#2D2D2D"
-          fontSize={!isMobile ? "sm" : "xs"}
-          fontWeight="hairline"
-          mt="3"
-        >
-          {description}
-        </Text>
       </Box>
     </Box>
   );
@@ -60,7 +52,6 @@ WorkCard.propTypes = {
   link: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
 };
 
 export default WorkCard;

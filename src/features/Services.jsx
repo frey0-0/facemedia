@@ -34,7 +34,7 @@ const Services = () => {
     },
     {
       image: service4,
-      title: "Service Content Strategy",
+      title: "Content Strategy",
       subtitle: "Instagram, LinkedIn and more",
       description:
         "We develop content strategies to improve your views and engagement. We'll work with you to understand your goals and create a plan to grow your audience.",
@@ -63,7 +63,7 @@ const Services = () => {
           <Box
             key={index}
             w="100%"
-            maxW={!(isMobile || isTablet) ? "40vw" : "90vw"}
+            maxW={!(isMobile || isTablet) ? "36vw" : "90vw"}
           >
             <ServicesCard {...service} />
           </Box>

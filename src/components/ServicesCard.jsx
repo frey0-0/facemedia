@@ -20,9 +20,8 @@ const ServicesCard = ({ image, title, subtitle, description }) => {
         height={!isMobile ? "50%" : "50%%"}
       >
         <Image
-          width="100%"
+          mx="auto"
           height="100%"
-          objectFit="stretch"
           maxH="20rem"
           overflow="hidden"
           src={image}
