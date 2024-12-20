@@ -5,7 +5,6 @@ import useMediaQueries from "../hooks/useMediaQuery";
 
 const Work = () => {
   const { isMobile, isTablet } = useMediaQueries();
-  console.log(isMobile, isTablet);
 
   const videos = [
     {

@@ -37,7 +37,7 @@ const Question = ({ question, answer }) => {
         <Box w="100%">
           <Text
             color="black"
-            fontSize={isMobile ? "sm" : "2xl"}
+            fontSize={isMobile ? "sm" : "lg"}
             overflowWrap="break-word"
             wordBreak="break-word"
           >

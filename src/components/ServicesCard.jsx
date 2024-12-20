@@ -11,13 +11,13 @@ const ServicesCard = ({ image, title, subtitle, description }) => {
       borderRadius="lg"
       overflow="hidden"
       width="100%"
+      height="100%"
     >
       <Box
         px="4"
         pt="4"
         borderRadius="0.25rem"
         width="100%"
-        height={!isMobile ? "50%" : "50%%"}
       >
         <Image
           mx="auto"
