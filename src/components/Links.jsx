@@ -1,4 +1,4 @@
-import { HStack, Text } from "@chakra-ui/react";
+import { Button, HStack, Text } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 import useMediaQueries from "../hooks/useMediaQuery";
 import PropTypes from "prop-types";
@@ -8,7 +8,7 @@ const Links = ({ isAtTop }) => {
 
   return (
     <HStack
-      spacing={isMobile ? "" : isTablet ? "2rem" : "3rem"}
+      spacing={isMobile ? "" : isTablet ? "2rem" : "2rem"}
       fontSize="1rem"
       alignItems="center"
       justifyContent={isMobile ? "space-between" : ""}
@@ -21,19 +21,29 @@ const Links = ({ isAtTop }) => {
       zIndex={23}
     >
       <Link to="home" smooth={true} duration={500} offset={-70}>
-        <Text>Home</Text>
+        <Button backgroundColor="transparent" variant="plain">
+          <Text fontWeight="400">Home</Text>
+        </Button>
       </Link>
       <Link to="services" smooth={true} duration={500} offset={-70}>
-        <Text>Services</Text>
+        <Button backgroundColor="transparent" variant="plain">
+          <Text fontWeight="400">Services</Text>
+        </Button>
       </Link>
       <Link to="work" smooth={true} duration={500} offset={-70}>
-        <Text>Work</Text>
+        <Button backgroundColor="transparent" variant="plain">
+          <Text fontWeight="400">Work</Text>
+        </Button>
       </Link>
       <Link to="about" smooth={true} duration={500} offset={-70}>
-        <Text>About</Text>
+        <Button backgroundColor="transparent" variant="plain">
+          <Text fontWeight="400">About</Text>
+        </Button>
       </Link>
       <Link to="contact" smooth={true} duration={500} offset={-70}>
-        <Text>Contact</Text>
+        <Button backgroundColor="transparent" variant="plain">
+          <Text fontWeight="400">Contact</Text>
+        </Button>
       </Link>
     </HStack>
   );
