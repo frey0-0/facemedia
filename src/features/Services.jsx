@@ -3,8 +3,8 @@ import { SimpleGrid, Box, Text } from "@chakra-ui/react";
 import { Element } from "react-scroll";
 import service1 from "../assets/service1.png";
 import service2 from "../assets/service2.png";
-import service3 from "../assets/service3.png";
-import service4 from "../assets/service4.png";
+import service4 from "../assets/service3.png";
+import service3 from "../assets/service4.png";
 import useMediaQueries from "../hooks/useMediaQuery";
 
 const Services = () => {
@@ -19,7 +19,7 @@ const Services = () => {
         "We create high-quality on-camera content, so you don’t need to hire an in-house content creator. With over 300 videos recorded, our experienced team ensures your brand’s message is clear, engaging, and creative, helping your brand stand out in the digital space.",
     },
     {
-      image: service2,
+      image: service4,
       title: "Video Editing Services",
       subtitle: "Instagram, YouTube and more",
       description:
@@ -33,7 +33,7 @@ const Services = () => {
         "We offer content writing for social media, including video scripts that connect your brand with your audience. Let us handle your content while you focus on your business.",
     },
     {
-      image: service4,
+      image: service2,
       title: "Content Strategy",
       subtitle: "Instagram, YouTube and more",
       description:
