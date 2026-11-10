@@ -278,7 +278,7 @@ h1 em, h2 em { font-style: normal; color: var(--orange); }
 .footer__agency strong { display: block; font-weight: 800; line-height: 1.1; }
 .footer__agency small { display: block; color: var(--muted); font-size: .85rem; }
 .footer__sub { margin-bottom: .6rem; font-size: .85rem; font-weight: 700; color: var(--muted); }
-.footer__social { display: flex; gap: .6rem; flex-wrap: wrap; }
+.footer__social { display: grid; grid-template-columns: repeat(2, max-content); gap: .6rem; }
 .footer__social li + li { margin: 0; }
 .footer__social a { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: var(--ink); color: #fff !important; font-size: 1.1rem; transition: background .2s; }
 .footer__social a:hover { background: var(--orange-deep); }
