@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// Relative base so the build works on GitHub Pages (/facemedia/) and on a custom domain.
 export default defineConfig({
+  base: './',
   plugins: [react()],
 })

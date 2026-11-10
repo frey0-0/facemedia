@@ -1,23 +1,43 @@
-import Landing from "./features/Landing";
-import Services from "./features/Services";
-import Founder from "./features/Founder";
-import ShortFormContent from "./features/ShortFormContent";
-import Work from "./features/Work";
-import Questions from "./features/Questions";
-import Footer from "./features/Footer";
-import "./global.css";
+import { useCallback, useState } from "react";
+import Navbar from "./sections/Navbar";
+import Hero from "./sections/Hero";
+import Stats from "./sections/Stats";
+import Brands from "./sections/Brands";
+import Storytelling from "./sections/Storytelling";
+import YouTube from "./sections/YouTube";
+import Story from "./sections/Story";
+import Audience from "./sections/Audience";
+import Services from "./sections/Services";
+import Process from "./sections/Process";
+import Faq from "./sections/Faq";
+import CTA from "./sections/CTA";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 
-const App = () => {
+export default function App() {
+  // Lets "Ask about this" links preselect a service in the contact form.
+  const [preset, setPreset] = useState(null);
+  const onEnquire = useCallback((name) => setPreset({ name, at: Date.now() }), []);
+
   return (
     <>
-      <Landing />
-      <Services />
-      <Work />
-      <ShortFormContent />
-      <Founder />
-      <Questions />
-      <Footer />
+      <a href="#main" className="skip">Skip to content</a>
+      <Navbar />
+      <main id="main">
+        <Hero />
+        <Stats />
+        <Brands />
+        <Storytelling />
+        <YouTube />
+        <Audience />
+        <Services onEnquire={onEnquire} />
+        <Process />
+        <Story />
+        <Faq />
+        <CTA />
+        <Contact presetService={preset} />
+      </main>
+      <Footer onEnquire={onEnquire} />
     </>
   );
-};
-export default App;
+}
