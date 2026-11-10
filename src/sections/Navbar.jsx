@@ -3,7 +3,7 @@ import { NAV } from "../config/site";
 import logo from "../assets/logo.png";
 
 // Sections without their own menu item, and the menu item they belong to.
-const ALIAS = { youtube: "storytelling", who: "services", process: "services", faq: "contact" };
+const ALIAS = { youtube: "storytelling", faq: "contact" };
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

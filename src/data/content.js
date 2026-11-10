@@ -35,30 +35,7 @@ export const STORY = [
   },
 ];
 
-export const AUDIENCE = [
-  {
-    title: "Brands",
-    text: "You need content people actually watch, not ads they skip. I'll plan it, write it, shoot it if you need a face, and edit it.",
-  },
-  {
-    title: "Creators",
-    text: "You're already making videos. I'll help them hit harder with better hooks, tighter edits and a plan that makes sense.",
-  },
-  {
-    title: "Just starting out",
-    text: "Never posted a video? Just a kid with a phone and an idea? Reach out anyway. I was that kid, and I'll help however I can.",
-  },
-];
-
-export const PROCESS = [
-  { title: "We talk", text: "You tell me what you're making, who it's for and where you're stuck." },
-  { title: "Find the story", text: "We figure out the angle, the hook and the script." },
-  { title: "Make it", text: "Shoot, edit, revise. You give feedback at every step." },
-  { title: "Post it", text: "You get videos ready for Reels, Shorts or YouTube." },
-];
-
 export const FAQS = [
-  { q: "Who do you work with?", a: "Brands, founders, creators, and people who are just starting out. If it's content, I'm interested." },
   { q: "Can you edit footage I already have?", a: "Yes. Send me the raw footage, a podcast or old videos and I'll edit them, or cut them into Reels and Shorts." },
   { q: "Do I need a script already?", a: "No. I can write it from scratch, or take yours and sharpen the hook and the story." },
   { q: "Can you be the face in our brand videos?", a: "Yes. If your brand needs a creator on camera, I can shoot UGC-style videos for you and edit them too." },

@@ -2,29 +2,24 @@ export const SERVICES = [
   {
     id: "editing",
     title: "Video Editing",
-    description:
-      "Reels, Shorts, long YouTube videos, podcasts. I edit for the story and the pacing first. Effects come last, and only if they help.",
-    items: ["Instagram Reels", "YouTube Shorts", "Long-form YouTube", "Podcast clips"],
+    description: "Reels, Shorts, YouTube, podcasts. Edited for story and pacing, not just effects.",
   },
   {
     id: "scripts",
     title: "Scriptwriting",
-    description:
-      "Most videos are lost in the first 3 seconds. I write hooks that make people stop, and stories that make them stay till the end.",
-    items: ["Hooks", "Full scripts", "Fixing your script", "Story structure"],
+    description: "Hooks that stop the scroll, and stories that keep people watching till the end.",
   },
   {
     id: "strategy",
     title: "Content Strategy",
-    description:
-      "What to post, why, and how often. A plan built around your audience, so you're not just guessing every week.",
-    items: ["Content ideas", "Content calendar", "Platform planning", "Channel reviews"],
+    description: "What to post, why, and how often, so you're not guessing every week.",
   },
   {
     id: "ugc",
     title: "Creator & UGC Videos",
-    description:
-      "A brand that needs a face on camera? I'll shoot the video for you myself, UGC style, and edit it too.",
-    items: ["UGC videos", "Brand collabs", "Product videos", "On-camera content"],
+    description: "Need a face on camera? I'll shoot it for your brand, UGC style, and edit it too.",
   },
 ];
+
+// Shown as one slim row under the services.
+export const STEPS = ["We talk", "Find the story", "Make it", "Post it"];

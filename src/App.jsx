@@ -6,9 +6,7 @@ import Brands from "./sections/Brands";
 import Storytelling from "./sections/Storytelling";
 import YouTube from "./sections/YouTube";
 import Story from "./sections/Story";
-import Audience from "./sections/Audience";
 import Services from "./sections/Services";
-import Process from "./sections/Process";
 import Faq from "./sections/Faq";
 import CTA from "./sections/CTA";
 import Contact from "./sections/Contact";
@@ -29,9 +27,7 @@ export default function App() {
         <Brands />
         <Storytelling />
         <YouTube />
-        <Audience />
         <Services onEnquire={onEnquire} />
-        <Process />
         <Story />
         <Faq />
         <CTA />

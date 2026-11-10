@@ -5,7 +5,7 @@ import recording from "../assets/aryan-recording.jpg";
 
 export default function Story() {
   return (
-    <section id="story" className="section">
+    <section id="story" className="section section--white">
       <div className="wrap story">
         <div className="story__side">
           <Reveal>

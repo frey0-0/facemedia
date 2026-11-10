@@ -3,7 +3,7 @@ import Reveal from "../components/Reveal";
 
 export default function Faq() {
   return (
-    <section id="faq" className="section section--white">
+    <section id="faq" className="section">
       <div className="wrap faq">
         <Reveal className="faq__head">
           <p className="eyebrow">FAQ</p>
