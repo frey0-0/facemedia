@@ -24,6 +24,7 @@ export default function Hero() {
             <span><i>I’m a</i></span>
             <span><i><em>storyteller.</em></i></span>
           </h1>
+          <p className="hero__tagline">Now it’s your turn to <strong>Face the Media.</strong></p>
           <p className="hero__lead">
             <span>I’ve been making videos since class 9.</span>
             <span>500+ videos and 25M+ views later,</span>

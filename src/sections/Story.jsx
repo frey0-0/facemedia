@@ -1,7 +1,7 @@
 import { STORY } from "../data/content";
 import Reveal from "../components/Reveal";
 import founder from "../assets/founder.png";
-import wave from "../assets/aryan-wave.jpg";
+import recording from "../assets/aryan-recording.jpg";
 
 export default function Story() {
   return (
@@ -31,11 +31,12 @@ export default function Story() {
 
       <Reveal className="wrap">
         <figure className="quote">
+          <img className="quote__photo" src={recording} alt="Aryan Bhalla recording a video at his desk, with his phone on a tripod" width="1600" height="1162" loading="lazy" />
+          <span className="quote__shade" aria-hidden="true" />
           <blockquote className="quote__text">
             <p>Content creation is a long and lonely journey. There was no one to help me. I’ll make sure no one else has to feel that way.</p>
             <cite>Aryan Bhalla</cite>
           </blockquote>
-          <img className="quote__photo" src={wave} alt="Aryan Bhalla smiling and waving at his desk" width="1032" height="1100" loading="lazy" />
         </figure>
       </Reveal>
     </section>

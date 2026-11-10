@@ -7,7 +7,7 @@ export default function CTA() {
       <Reveal className="wrap cta__inner">
         <h2 id="cta-title">
           <span>I’m a storyteller.</span>
-          <span>Now it’s your turn to <em>face the media.</em></span>
+          <span>Now it’s your turn to <em>Face the Media.</em></span>
         </h2>
         <div>
           <p>Brand, creator, or just getting started. Tell me what you want to make.</p>
