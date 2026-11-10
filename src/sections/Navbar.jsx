@@ -35,7 +35,7 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className={`nav ${scrolled || open ? "nav--solid" : ""}`}>
+    <header className={`nav ${scrolled || open ? "nav--solid" : ""} ${open ? "nav--open" : ""}`}>
       <div className="wrap nav__bar">
         <a href="#home" className="nav__logo" aria-label="FaceMedia home" onClick={() => setOpen(false)}>
           <img src={logo} alt="FaceMedia" width="97" height="50" />
