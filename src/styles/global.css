@@ -332,6 +332,9 @@ h1 em, h2 em { font-style: normal; color: var(--orange); }
   .hero__badge--c { left: -14px; top: 42%; }
   .story__side { position: static; }
   .story__photo { width: min(100%, 260px); }
+  /* Phones: form straight after the heading; these links already sit in the footer. */
+  .contact__list { display: none; }
+  .contact__info { margin-bottom: -.5rem; }
   .quote { flex-direction: column; align-items: stretch; min-height: 0; }
   .quote__photo { position: relative; inset: auto; width: 100%; height: auto; aspect-ratio: 1 / 1; object-position: 88% 40%; -webkit-mask-image: linear-gradient(180deg, #000 58%, rgba(0,0,0,.6) 80%, transparent 100%); mask-image: linear-gradient(180deg, #000 58%, rgba(0,0,0,.6) 80%, transparent 100%); }
   .quote__shade { display: none; }
